@@ -1,0 +1,31 @@
+// Find the largest Sum of Consecutive Digits
+// [1,2,3,4,3,5,,4,6,7,8] --------> Total digit is 10
+// Count the largest sum of consecutive Digits
+// num =4 
+// sum =25
+
+//conditions 
+// num >array ==> error message
+// 10-4+1 => ?
+
+function largestSum(array, num){
+  if(num >array){ 
+      console.log("num is not greater than array")
+  }
+ else{
+     let max=0;
+     for(let i=0;i<array.length-num+1;i++){
+         let temp=0;
+         for(let j=0; j<num;j++){
+             console.log("i"+i+"j",j)
+           temp+=array[i+j]
+         }
+         if(temp >max){
+             max=temp;
+
+         }
+     } return max;
+ }
+}
+const result = largestSum([1,2,3,4,3,5,,4,6,7,8],4)
+console.log(result)
