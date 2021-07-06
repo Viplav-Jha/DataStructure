@@ -27,5 +27,5 @@ function largestSum(array, num){
      } return max;
  }
 }
-const result = largestSum([1,2,3,4,3,5,,4,6,7,8],4)
+const result = largestSum([1,2,3,4,3,5,,4,6,7,8],4); // for 3 digit we can take 3
 console.log(result)
