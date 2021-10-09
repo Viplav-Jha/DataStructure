@@ -30,4 +30,4 @@ function isAnagram(string1,string2){
 }
 
  const check=isAnagram("hello","llheo")
- console.log(check)
+ console.log(check); 
